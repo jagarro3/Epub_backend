@@ -43,4 +43,4 @@ APP.include_router(V2, prefix="/v2", tags=["v2"])
 
 # Running of app.
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", log_level="info")
+    uvicorn.run("main:APP", host="0.0.0.0", log_level="info")
