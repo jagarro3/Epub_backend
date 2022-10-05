@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from routers import EpubRouter, V2
+import os
 
 # ############
 # FastAPI App
@@ -43,4 +44,4 @@ APP.include_router(V2, prefix="/v2", tags=["v2"])
 
 # Running of app.
 if __name__ == "__main__":
-    uvicorn.run("main:APP", host="0.0.0.0", log_level="info")
+    uvicorn.run("main:APP", host="0.0.0.0", port=os.getenv("PORT", default=5000), log_level="info")
