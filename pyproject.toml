@@ -10,6 +10,7 @@ fastapi = "^0.80.0"
 uvicorn = "^0.18.3"
 ebooklib = "^0.17.1"
 beautifulsoup4 ="^4.11.1"
+nltk = "^3.7"
 [tool.poetry.dev-dependencies]
 
 [build-system]
