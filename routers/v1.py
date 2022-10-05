@@ -1,5 +1,4 @@
 """app.routers.v1.py"""
-import os
 from fastapi import APIRouter, UploadFile
 from services import lector
 

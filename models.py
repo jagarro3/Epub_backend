@@ -1,6 +1,4 @@
 """app.models.py"""
-from typing import List
-from ebooklib import epub
 
 class EpubInfo(object):
     title = None

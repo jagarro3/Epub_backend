@@ -1,16 +1,11 @@
-from pickle import NONE
 import ebooklib
-import unidecode
 from ebooklib import epub
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk import *
-from nltk.stem.porter import PorterStemmer
 from fastapi import UploadFile
 from models import EpubInfo
-from PIL import Image
-import io
 import base64
 
 stop_words = stopwords.words('spanish')
