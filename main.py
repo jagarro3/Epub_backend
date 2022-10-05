@@ -44,5 +44,5 @@ APP.include_router(V2, prefix="/v2", tags=["v2"])
 # Running of app.
 if __name__ == "__main__":
     uvicorn.run(
-        "main:APP", host="127.0.0.1", port=8000, log_level="info",
+        "main:APP", host="https://apiepub.up.railway.app", log_level="info",
     )
